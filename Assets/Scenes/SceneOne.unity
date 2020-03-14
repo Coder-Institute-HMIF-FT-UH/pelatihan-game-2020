@@ -4902,6 +4902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d5979c060fd7d249a6560adf145c54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angkaRandom: 0d0000000f000000
 --- !u!4 &429859644
 Transform:
   m_ObjectHideFlags: 0

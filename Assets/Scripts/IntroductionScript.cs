@@ -2,29 +2,30 @@
 
 public class IntroductionScript : MonoBehaviour
 {
-    private float suhuTeh = 100f, suhuIdeal = 50f, suhuDingin = 20f;
+    int jumlah = 3;
+    bool isCounting = false;
+    public int[] angkaRandom;
 
-    // Update is called once per frame
-    void Update()
-    {
-        // Panggil method CekTemperatur
-        CekTemperatur();
-        // suhuTeh akan berkurang seiring waktu
-        suhuTeh -= Time.deltaTime * 6;
-    }
-    /// <summary>
-    /// CekTemperatur: Mengecek suhuTeh
-    /// Jika suhuTeh > suhuIdeal artinya teh masih panas
-    /// Jika suhuTeh < suhuDingin artinya teh sudah dingin
-    /// Selain itu artinya teh siap diminum
-    /// </summary>
-    void CekTemperatur(){
-        if(suhuTeh > suhuIdeal)
-            Debug.Log("Teh masih panas");
-        else if(suhuTeh < suhuDingin)
-            Debug.Log("Teh sudah dingin");
-        else
-            Debug.Log("Teh siap diminum.");
+    private void Start(){
+        // Looping for
+        for(int i=0; i<jumlah; i++){
+            Debug.Log("Looping For. Nilai: " + i);
+        }
 
+        // Looping while
+        while(jumlah > 0){
+            Debug.Log("Looping While. Nilai: " + jumlah);
+            jumlah--; // Decrement jumlah
+        }
+
+        // Looping Do While
+        do{
+            Debug.Log("Looping DoWhile");
+        } while(isCounting);
+
+        // Looping foreach
+        foreach(int angka in angkaRandom){
+            Debug.Log("Looping foreach. Nilai: " + angka);
+        }
     }
 }
