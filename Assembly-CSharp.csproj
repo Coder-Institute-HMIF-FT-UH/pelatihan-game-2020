@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\IntroductionScript.cs" />
+     <Compile Include="Assets\Scripts\RockScript.cs" />
      <None Include="Assets\Wispy Sky\ReadMe.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/asus/Desktop/Unity/pelatihan-game-2020/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
