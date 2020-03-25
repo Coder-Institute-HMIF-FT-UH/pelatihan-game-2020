@@ -1,20 +1,27 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class RockScript : MonoBehaviour
 {
-    // Deklarasi variabel
-    private BoxCollider rockCollider;
-    
     // Start is called before the first frame update
     void Start()
     {
-        rockCollider = GetComponent<BoxCollider>(); // Get component
-        rockCollider.size = new Vector3(5,5,5); // Ubah size collider 
+         
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    /// <summary>
+    /// OnCollissionEnter: akan mendeteksi jika objek bersentuhan dengan objek lain
+    /// </summary>
+    /// <param name="other"></param>
+    private void OnCollisionEnter(Collision other)
+    {
+        // Munculkan pesan console
+        Debug.Log(gameObject.name + " collision dengan " + other.gameObject.name);
     }
 }
